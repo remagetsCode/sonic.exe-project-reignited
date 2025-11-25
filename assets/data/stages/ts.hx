@@ -26,6 +26,11 @@ var fireLight:CustomShader = new CustomShader('firelight');
 var theTinyLittleMotherFuckerShaderHolyFuckManTsTuffFrFrMan:CustomShader = new CustomShader('chromaticAberration');
 var rgbShader:Float = 0;
 
+FlxG.game.setFilters([]);   // To wipe all the shaders from the game camera
+var heat1 = new CustomShader('heatwave1');
+heat1.intensity = 0.0;
+heat1.v_comp = 30.0;
+
 function create() {
     introLength = 0.05;
 
@@ -58,7 +63,7 @@ function postCreate() {
     jumpscare.animation.play('jumpscare');
     jumpscare.alpha = 0.001;
     jumpscare.screenCenter(0x01);
-    add(jumpscare).camera = noteCam;
+    add(jumpscare).camera = extraCam;
 
     noteStat = new FlxSprite();
     noteStat.frames = Paths.getFrames('stages/sonic/special/hitStatic');
@@ -105,10 +110,16 @@ function postCreate() {
         player.members[i].camera = noteCam;
     }
 
-    if (Options.quality == 1) for (uh in [camGame, camHUD, noteCam]) uh.addShader(theTinyLittleMotherFuckerShaderHolyFuckManTsTuffFrFrMan);
+    if (Options.quality == 1) for (uh in [camGame, camHUD, noteCam]) {
+        uh.addShader(theTinyLittleMotherFuckerShaderHolyFuckManTsTuffFrFrMan);
+        FlxG.game.addShader(heat1);
+    }
 }
 
+var heatVel:Float = 1;
+var e:Float = 0;
 function update(elapsed:Float) {
+    heat1.iTime = e += elapsed*heatVel;
     noteCam.zoom = FlxMath.lerp(noteCam.zoom, 1, 0.05);
 
     theTinyLittleMotherFuckerShaderHolyFuckManTsTuffFrFrMan.redOff = [0, rgbShader];
@@ -140,17 +151,23 @@ function postUpdate(){
     }
 }
 
+var modulo:Int = 2;     // Interval of beats the noteCam will bump
 function beatHit(b:Int) {
-    if (b % 4 == 0 && canBump) noteCam.zoom = (Options.downscroll ? 1.02 : 1.03);
+    if (b % modulo == 0 && canBump) noteCam.zoom = (Options.downscroll ? 1.02 : 1.03);
 
     switch (b) {
-        case 35: canBump = true;
+        case 1: for(n in holds) n.camera = noteCam;
+        case 34: 
+            heat1.intensity = 0.008;
+            canBump = true;
         case 112: allHud(0, 4.5);
 
         case 124:
             FlxTween.tween(noteCam, {x: -10}, 2, {ease: FlxEase.sineInOut});
             FlxTween.tween(noteCam, {x: 10}, 2, {ease: FlxEase.sineInOut, type: FlxTween.PINGPONG, startDelay: 2});
             allHud(1, 0.5);
+
+        case 157: modulo = 1;
 
         case 252:
             allHud(0, 4.5);
@@ -179,13 +196,20 @@ function beatHit(b:Int) {
         case 416:
             FlxTween.cancelTweensOf(noteCam);
             wave();
+        case 448:
+            FlxTween.num(1, 2.5, 2, {onUpdate: (v)->shaderVel = v.value});
+            FlxTween.tween(heat1, {intensity: 0.015}, 2);
         case 580: 
+            FlxTween.num(2.5, 4, 1, {onUpdate: (v)->shaderVel = v.value});
             FlxTween.num(0, 0.005, 20, {onUpdate: (twn) -> rgbShader = twn.value});
             noteCam.shake(0.0025, 39);
+        case 612: FlxTween.num(4, 6, 1, {onUpdate: (v)->shaderVel = v.value});
 
 		case 706: for (e in [camGame, camHUD, noteCam]) e.shake(0.005, 5);
         case 708: FlxTween.num(0.005, 0, 5, {onUpdate: (twn) -> rgbShader = twn.value});
-		case 722: for (cams in [camGame, camHUD, noteCam]) cams.visible = false;
+		case 722: 
+            heat1.intensity = 0.0;
+            for (cams in [camGame, camHUD, noteCam]) cams.visible = false;
     }
 }
 
@@ -273,4 +297,8 @@ function simpleJumpscare() {
 
     	new FlxTimer().start(0.2, () -> {simpleJump.alpha = 0; backJump.alpha = 0; shittingYourself = false;});
 	}
+}
+
+function destroy(){
+    FlxG.game.setFilters([]);   // To wipe all the shaders from the game camera
 }

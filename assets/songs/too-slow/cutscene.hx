@@ -17,11 +17,12 @@ function create() {
         FlxG.cameras.remove(uhCam);
         close();
     });
-
+    uh.antialiasing = true;
     uh.scale.set(0.667, 0.667);
     uh.play();
 
     add(theOtherFuckingIntro = new FlxVideoSprite(500)).load(Paths.video('tooslow'), [':no-audio']);
+    theOtherFuckingIntro.antialiasing = true;
     theOtherFuckingIntro.alpha = 0.001;
     theOtherFuckingIntro.play();
 }
