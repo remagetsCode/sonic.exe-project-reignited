@@ -1,0 +1,37 @@
+<!DOCTYPE codename-engine-stage>
+<stage startCamPosX="1000" startCamPosY="500" folder="stages/sonic/" zoom="0.75" name="ts">
+	<sprite x="-1106" scroll="0.5" sprite="sky" y="-998" scaley="0.8" name="sky"/>
+	<sprite x="-1869" sprite="leavesair" y="-1562" type="none" name="leavesair"/>
+	<sprite x="-1300" scroll="0.7" sprite="treesbehind" y="-200" name="treesbehind"/>
+
+	<sprite x="-800" scroll="0.8" sprite="fire/backFire" y="-200" alpha="0" name="backFire"/>
+	
+	<sprite x="-1300" scroll="0.9" sprite="floor2" y="300" name="floor2"/>
+	<sprite x="-141" scroll="0.9" sprite="leavesfore1" y="-84" scalex="0.92" scaley="0.91" name="leavesfore1"/>
+	<sprite x="-800" scroll="0.95" sprite="maintrees" y="-550" name="maintrees"/>
+	<sprite x="-1300" sprite="floor1" y="400" name="floor1"/>
+	<sprite x="1136" sprite="eggman" y="513" name="eggman"/>
+	<sprite x="-307" sprite="tail" y="693" name="tail"/>
+
+	<sprite x="-200" sprite="tailsHead" y="-200" name="tailsHead"/>
+
+	<high-memory>
+		<sprite x="1152" sprite="fire/eggmanFire" y="298" alpha="0" name="eggmanFire"/>		
+		<sprite x="-242" sprite="fire/tailsFire" y="-353" alpha="0" name="tailsHeadFire"/>
+	</high-memory>
+
+	<girlfriend camxoffset="50" x="350" scroll="1" camyoffset="150" y="50"/>
+	<dad x="20" camyoffset="150"/>
+	<boyfriend x="900"/>
+	<combo x="1500"/>
+
+	<high-memory>
+		<sprite x="-640" sprite="fire/tailFire" y="365" alpha="0" name="tailFire"/>
+		<sprite x="867" sprite="fire/knuxFire" y="613" alpha="0" name="knuxFire"/>		
+	</high-memory>
+
+	<sprite x="990" sprite="knux" y="800" scale="0.87" name="knux"/>
+	
+	<sprite x="-897" scroll="1.15" sprite="leavesfore2" y="312" scalex="0.89" scaley="0.76" name="leavesfore2"/>
+	<sprite x="-820" scroll="1.6" sprite="fire/frontFire" y="1160" alpha="0" name="frontFire"/>
+</stage>

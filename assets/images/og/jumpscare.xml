@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sonicJUMPSCARE.png">
+	<SubTexture name="jumpscare0000" x="0" y="0" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0001" x="1155" y="0" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0002" x="2310" y="0" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0003" x="3465" y="0" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0004" x="4620" y="0" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0005" x="5775" y="0" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0006" x="6930" y="0" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0007" x="0" y="1456" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0008" x="1155" y="1456" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0009" x="2310" y="1456" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0010" x="3465" y="1456" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0011" x="4620" y="1456" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0012" x="5775" y="1456" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0013" x="6930" y="1456" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0014" x="0" y="2912" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0015" x="1155" y="2912" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0016" x="2310" y="2912" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0017" x="4620" y="1456" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0018" x="5775" y="1456" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0019" x="6930" y="1456" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0020" x="3465" y="2912" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0021" x="4620" y="2912" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0022" x="5775" y="2912" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0023" x="6930" y="2912" width="1155" height="1456"/>
+	<SubTexture name="jumpscare0024" x="0" y="4368" width="1155" height="1456"/>
+</TextureAtlas>

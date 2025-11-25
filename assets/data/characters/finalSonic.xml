@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<character y="80" scale="0.85" camy="-100" icon="sonic">
+	<anim name="idle" anim="idle" loop="true"/>
+	<anim name="singDOWN" anim="down" x="31" y="-231"/>
+	<anim name="singRIGHT" anim="right" x="30" y="195"/>
+	<anim name="singLEFT" anim="left" x="392" y="-17"/>
+	<anim name="singUP" anim="up" x="83" y="318"/>
+	<anim name="grrr" anim="grrr" x="67" y="4"/>
+	<anim name="scream" anim="scream" x="12" y="54"/>
+</character>

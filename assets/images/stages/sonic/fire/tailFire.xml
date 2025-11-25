@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tailFire.png">
+	<SubTexture name="idle0000" x="51" y="51" width="621" height="863" frameX="-6" frameY="0" frameWidth="627" frameHeight="863"/>
+	<SubTexture name="idle0001" x="722" y="51" width="623" height="789" frameX="0" frameY="-52" frameWidth="627" frameHeight="863"/>
+	<SubTexture name="idle0002" x="722" y="51" width="623" height="789" frameX="0" frameY="-52" frameWidth="627" frameHeight="863"/>
+	<SubTexture name="idle0003" x="1395" y="51" width="612" height="744" frameX="-7" frameY="-102" frameWidth="627" frameHeight="863"/>
+	<SubTexture name="idle0004" x="1395" y="51" width="612" height="744" frameX="-7" frameY="-102" frameWidth="627" frameHeight="863"/>
+	<SubTexture name="idle0005" x="2057" y="51" width="615" height="786" frameX="-6" frameY="-48" frameWidth="627" frameHeight="863"/>
+	<SubTexture name="idle0006" x="2057" y="51" width="615" height="786" frameX="-6" frameY="-48" frameWidth="627" frameHeight="863"/>
+	<SubTexture name="idle0007" x="2722" y="51" width="627" height="863"/>
+</TextureAtlas>

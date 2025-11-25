@@ -1,0 +1,14 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="1" name="stage" folder="og/" startCamPosY="600" startCamPosX="1000">
+	<sprite name="sky" x="-500" y="-100" sprite="sky" scroll="0.8" scalex="1.2" updateHitbox="true"/>
+	<sprite name="floor2" x="-500" y="-200" sprite="floor2" scale="1.4" scroll="0.9"/>
+	<sprite name="floor1" x="-30" y="-200" sprite="floor1" scale="1.4"/>
+	<sprite name="knuckle" x="150" y="-350" sprite="knuckle" scale="1.4"/>
+	<sprite name="tail" x="-100" y="-300" sprite="tail" scale="1.4"/>
+	<sprite name="eggman" x="100" y="-350" sprite="eggman" scale="1.4"/>
+	<girlfriend scroll="1"/>
+	<dad camxoffset="-100" camyoffset="80"/>
+	<boyfriend camxoffset="100" />
+	<sprite name="grass" x="-500" y="-200" sprite="grass" scale="1.4"/>
+	<combo x="1200"/>
+</stage>

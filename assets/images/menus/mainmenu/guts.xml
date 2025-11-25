@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="guts.png" width="463" height="722">
+	<SubTexture name="guts0000" x="237" y="1" width="113" height="720" frameX="-3" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0001" x="237" y="1" width="113" height="720" frameX="-3" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0002" x="237" y="1" width="113" height="720" frameX="-3" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0003" x="237" y="1" width="113" height="720" frameX="-3" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0004" x="352" y="1" width="110" height="720" frameX="-0" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0005" x="352" y="1" width="110" height="720" frameX="-0" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0006" x="352" y="1" width="110" height="720" frameX="-0" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0007" x="352" y="1" width="110" height="720" frameX="-0" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0008" x="121" y="1" width="114" height="720" frameX="-2" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0009" x="121" y="1" width="114" height="720" frameX="-2" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0010" x="121" y="1" width="114" height="720" frameX="-2" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0011" x="121" y="1" width="114" height="720" frameX="-2" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0012" x="1" y="1" width="118" height="720" frameX="-2" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0013" x="1" y="1" width="118" height="720" frameX="-2" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0014" x="1" y="1" width="118" height="720" frameX="-2" frameY="-0" frameWidth="120" frameHeight="720"/>
+	<SubTexture name="guts0015" x="1" y="1" width="118" height="720" frameX="-2" frameY="-0" frameWidth="120" frameHeight="720"/>
+</TextureAtlas>

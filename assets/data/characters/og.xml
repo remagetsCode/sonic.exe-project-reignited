@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<character x="50" y="130" scale="1.1" icon="og">
+	<anim name="idle" anim="idle" loop="true"/>
+	<anim name="singDOWN" anim="down" x="60" y="-5"/>
+	<anim name="singRIGHT" anim="right" x="-15"/>
+	<anim name="singLEFT" anim="left" x="95" y="-20"/>
+	<anim name="singUP" anim="up" x="-5" y="55"/>
+	<anim name="laugh" anim="laugh" x="25"/>
+	<anim name="speak" anim="speak" x="64" y="-5"/>
+</character>

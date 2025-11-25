@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="wall.png" width="388" height="1444">
+	<SubTexture name="wall0000" x="1" y="1" width="386" height="720" frameX="-0" frameY="-0" frameWidth="386" frameHeight="720"/>
+	<SubTexture name="wall0001" x="1" y="1" width="386" height="720" frameX="-0" frameY="-0" frameWidth="386" frameHeight="720"/>
+	<SubTexture name="wall0002" x="1" y="723" width="386" height="720" frameX="-0" frameY="-0" frameWidth="386" frameHeight="720"/>
+	<SubTexture name="wall0003" x="1" y="723" width="386" height="720" frameX="-0" frameY="-0" frameWidth="386" frameHeight="720"/>
+</TextureAtlas>
