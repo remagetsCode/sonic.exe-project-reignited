@@ -304,9 +304,7 @@ function theFuckingMovement(x:Float, y:Float, angle:Float) {
 }
 
 function simpleJumpscare() {
-	var chichotas:Int = FlxG.random.int(1, 2);
 
-	if (chichotas == 1) {
 		simpleJump.alpha = 1;
     	backJump.alpha = 1;
     	FlxG.sound.play(Paths.sound("softjump"), 0.6);
@@ -314,7 +312,7 @@ function simpleJumpscare() {
 
     	new FlxTimer().start(0.2, () -> {simpleJump.alpha = 0; backJump.alpha = 0; shittingYourself = false;});
 	}
-}
+
 
 function freakyTitle() {
     var chars = "I am god";
