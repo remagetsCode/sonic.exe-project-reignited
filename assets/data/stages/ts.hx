@@ -54,6 +54,7 @@ function postCreate() {
 
     if (Options.quality == 1){
         add(fuckingIntro = new FlxVideoSprite(-320, -180)).load(Paths.video('tooSlow'), [':no-audio']);
+        fuckingIntro.antialiasing = true;
         fuckingIntro.camera = noteCam;
     }
 
@@ -149,6 +150,9 @@ function postUpdate(){
         if (curCameraTarget == 2) defaultCamZoom = 0.5;
         else defaultCamZoom = 0.6;
     }
+    if ((Conductor.curBeat > 156 && Conductor.curBeat < 411)) {
+        freakyTitle();
+    }
 }
 
 var modulo:Int = 2;     // Interval of beats the noteCam will bump
@@ -162,6 +166,11 @@ function beatHit(b:Int) {
             canBump = true;
         case 112: allHud(0, 4.5);
 
+        case 120: window.title = "Vs Sonic.exe";
+        case 121: window.title = "Vs Sonic";
+        case 122: window.title = "Vs So";
+        case 123: window.title = "";
+ 
         case 124:
             FlxTween.tween(noteCam, {x: -10}, 2, {ease: FlxEase.sineInOut});
             FlxTween.tween(noteCam, {x: 10}, 2, {ease: FlxEase.sineInOut, type: FlxTween.PINGPONG, startDelay: 2});
@@ -191,7 +200,13 @@ function beatHit(b:Int) {
 			new FlxTimer().start(3.5, ()->{remove(alvin); alvin.destroy();});
 
         case 282: allHud(1, 1);
-        case 412: allHud(0, 1.5);
+        case 412:
+            window.title = "I'm gonna getcha";
+            allHud(0, 1.5);
+        case 425: window.title = "I am god";
+        case 434: window.title = "HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA";
+        case 445: window.title = "yOu ArE tOO sLoW";
+
         case 444: allHud(1, 3);
         case 416:
             FlxTween.cancelTweensOf(noteCam);
@@ -199,10 +214,12 @@ function beatHit(b:Int) {
         case 448:
             FlxTween.num(1, 2.5, 2, {onUpdate: (v)->shaderVel = v.value});
             FlxTween.tween(heat1, {intensity: 0.015}, 2);
+        case 516: modulo = 2;
         case 580: 
             FlxTween.num(2.5, 4, 1, {onUpdate: (v)->shaderVel = v.value});
             FlxTween.num(0, 0.005, 20, {onUpdate: (twn) -> rgbShader = twn.value});
             noteCam.shake(0.0025, 39);
+            modulo = 1;
         case 612: FlxTween.num(4, 6, 1, {onUpdate: (v)->shaderVel = v.value});
 
 		case 706: for (e in [camGame, camHUD, noteCam]) e.shake(0.005, 5);
@@ -297,6 +314,17 @@ function simpleJumpscare() {
 
     	new FlxTimer().start(0.2, () -> {simpleJump.alpha = 0; backJump.alpha = 0; shittingYourself = false;});
 	}
+}
+
+function freakyTitle() {
+    var chars = "I am god";
+    
+    var newString = "";
+    for (i in 0...chars.length) {
+        var randIndex = FlxG.random.int(0, chars.length - 1);
+        newString += chars.charAt(randIndex);
+    }
+    window.title = newString;
 }
 
 function destroy(){

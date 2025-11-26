@@ -55,7 +55,7 @@ function focusGained() {
 }
 // ts pmo gng
 
-function update() if (!(FlxG.state is CharacterEditor) && !(FlxG.state is Charter)) if (window.title != "Vs Sonic.exe: AIR" && FlxG.save.data.ogTitle == false) window.title = "Vs Sonic.exe: AIR"; else if (window.title != "Friday Night Funkin': Vs Sonic.exe" && FlxG.save.data.ogTitle == true) window.title = "Friday Night Funkin': Vs Sonic.exe";
+//function update() if (!(FlxG.state is CharacterEditor) && !(FlxG.state is Charter)) if (window.title != "Vs Sonic.exe: AIR" && FlxG.save.data.ogTitle == false) window.title = "Vs Sonic.exe: AIR"; else if (window.title != "Friday Night Funkin': Vs Sonic.exe" && FlxG.save.data.ogTitle == true) window.title = "Friday Night Funkin': Vs Sonic.exe";
 
 function preStateSwitch(){
     Framerate.codenameBuildField.text = '';
