@@ -161,9 +161,7 @@ function beatHit(b:Int) {
 
     switch (b) {
         case 1: for(n in holds) n.camera = noteCam;
-        case 34: 
-            heat1.intensity = 0.008;
-            canBump = true;
+        case 34: canBump = true;
         case 112: allHud(0, 4.5);
 
         case 120: window.title = "Vs Sonic.exe";
@@ -211,16 +209,16 @@ function beatHit(b:Int) {
         case 416:
             FlxTween.cancelTweensOf(noteCam);
             wave();
-        case 448:
+        case 449:
             FlxTween.num(1, 2.5, 2, {onUpdate: (v)->shaderVel = v.value});
             FlxTween.tween(heat1, {intensity: 0.015}, 2);
         case 516: modulo = 2;
         case 580: 
-            FlxTween.num(2.5, 4, 1, {onUpdate: (v)->shaderVel = v.value});
+            FlxTween.num(2.5, 5, 1, {onUpdate: (v)->shaderVel = v.value});
             FlxTween.num(0, 0.005, 20, {onUpdate: (twn) -> rgbShader = twn.value});
             noteCam.shake(0.0025, 39);
             modulo = 1;
-        case 612: FlxTween.num(4, 6, 1, {onUpdate: (v)->shaderVel = v.value});
+        case 612: FlxTween.num(5, 7, 1, {onUpdate: (v)->shaderVel = v.value});
 
 		case 706: for (e in [camGame, camHUD, noteCam]) e.shake(0.005, 5);
         case 708: FlxTween.num(0.005, 0, 5, {onUpdate: (twn) -> rgbShader = twn.value});
