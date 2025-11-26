@@ -54,8 +54,7 @@ function postCreate() {
 
     if (Options.quality == 1){
         add(fuckingIntro = new FlxVideoSprite(-320, -180)).load(Paths.video('tooSlow'), [':no-audio']);
-        fuckingIntro.antialiasing = true;
-        fuckingIntro.camera = noteCam;
+        fuckingIntro.camera = extraCam;
     }
 
     jumpscare = new FlxSprite();
