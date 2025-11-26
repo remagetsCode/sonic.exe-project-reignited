@@ -2,7 +2,8 @@ var colors:Array = ["Purple", "Blue", "Green", "Red"];
 var generated:Bool = false;
 public var holds:FlxTypedGroup<FlxSprite> = new FlxTypedGroup<FlxSprite>();
 function postCreate(){
-	//holds = new FlxTypedGroup<FlxSprite>();
+	window.title = "Vs Sonic.exe: AIR";
+
 	for(i => color in colors){
 		s = new FlxSprite(i*100, 0);
 		s.frames = Paths.getFrames('game/splashes/holds/holdCover'+color);

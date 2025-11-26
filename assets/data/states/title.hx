@@ -22,6 +22,7 @@ function create() {
 		window.alert('This mod is extremely demanding in\nterms of performance; if you have a low-end\nPC, we suggest you to disable shaders and set\nthe graphics quality to low\n\nEste mod es extremadamente demandante\nen temas graficos, si tienes una PC muy mala,\nte recomendamos deshabilitar los shaders y\nponer los graficos en bajos\n\nEnjoy! || Disfruta pe chamo', 'Read this before playing || Lee esto antes de jugar');
 		FlxG.save.data.canAdvice = false;
 	}
+	window.title = "Vs Sonic.exe: AIR";
 
     add(intro = new FlxVideoSprite(-320, -180)).load(Paths.video('gameIntro'), [':no-audio']);
 	intro.scale.set(0.67, 0.67);

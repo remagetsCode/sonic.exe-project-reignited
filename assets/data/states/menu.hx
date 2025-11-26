@@ -35,6 +35,7 @@ var ogCheck:Bool = FlxG.save.data.tooSlow;
 var yaNoHijo:Int = FlxG.random.int(1, 10);
 
 function create() {
+	window.title = "Vs Sonic.exe: AIR";
 	CoolUtil.playMenuSong();
 	if (yaNoHijo == 1) FlxG.sound.music.volume = 0;
 	else FlxG.sound.music.volume = 1;
