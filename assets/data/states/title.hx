@@ -57,7 +57,7 @@ function postCreate() {
 		topCam.flash(0xFFFF0000, 1.5);
 		black.alpha = 0;
 		FlxG.sound.play(Paths.sound('title/show'));
-		CoolUtil.playMenuSong();
+		FlxG.sound.playMusic(Paths.music('freakyMenu_old'));
 		started = true;
 	});
 	

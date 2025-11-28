@@ -8,6 +8,7 @@ function create() {
     FlxG.cameras.add(uhCam, false);
 
     add(uh = new FlxVideoSprite(-320, -180)).load(Paths.video('ending'));
+    uh.antialiasing = true;
     uh.bitmap.onEndReached.add(()->{
         uh.visible = false;
         uh.stop();
